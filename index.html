@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+
+    <!-- CSS: TEM que ter <link> -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Lista de Tarefas</h1>
+
+<form id="task-form">
+    <input
+        type="text"
+        id="description"
+        placeholder="Descrição da tarefa"
+        required
+    >
+
+    <input
+        type="date"
+        id="dueDate"
+        required
+    >
+
+    <select id="priority" required>
+        <option value="">Urgência</option>
+        <option value="alta">Alta</option>
+        <option value="media">Média</option>
+        <option value="baixa">Baixa</option>
+    </select>
+
+    <button type="submit">Adicionar</button>
+</form>
+
+<ul id="taskList"></ul>
+
+<!-- JS: TEM que ter <script> -->
+<script src="js/script.js"></script>
+</body>
+</html>
